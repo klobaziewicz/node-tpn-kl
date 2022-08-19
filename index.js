@@ -290,6 +290,6 @@ app.use(express.json()) //req.body
 app.use(cors());
 //
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log("server jest na porcie 5000")
 })
